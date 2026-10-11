@@ -1,16 +1,16 @@
 # Percipitation Comparison
 
-> This project compares the precipitation of Seattle, WA and Orlando, FL between January 1st 2018 - December 31st 2022.
+> This project compares average ACT scores from 2016 to socioeconomic predictor variables to examine the relationship between average ACT score and general socioeconomic factors.
 
 ---
 
 ## Project Overview
 
-This project cleans and analyzes data to compare the precipitation at weather stations by the airport SEATAC in Seattle, WA and the airport MCO in Orlando, FL between January 1st 2018 and December 31st 2022. This project uses data downloaded from NOAA. The purpose is to determine which area recieves a larger amount of percipitation on average and to discover and display any other obvious trends. Findings TBD.
+This project compares average ACT score by school to socioeconomic predictor variables to examine the relationship between average ACT score and general socioeconomic factors. Average ACT scores use the EdGap data set described below. From the EdGap Data, we also examine unemployment rate, % adults with a college degree, % children in a married couple family, median household income, and % students eligible for free/reduced lunch. Further analysis is then conducted using the State of Washington Open Data Report Card Assessment to look at trends accross student demographic groups.
 
-- **Objective:** This project compares the precipitation of Seattle, WA and Orlando, FL between January 1st 2018 - December 31st 2022.
-- **Domain:** Weather/Environmental
-- **Key Techniques:**  Regression, Statistical Tests of Significance
+- **Objective:** This project compares average ACT scores from 2016 to socioeconomic predictor variables to examine the relationship between average ACT score and general socioeconomic factors.
+- **Domain:** Education
+- **Key Techniques:**  Pair Plots, Regression, Statistical Tests of Significance
 
 ---
 
@@ -28,19 +28,24 @@ This project cleans and analyzes data to compare the precipitation at weather st
 
 ## Data
 
-- **Source:** [Link to the data source](https://www.ncei.noaa.gov/cdo-web/search)
-- **Description:** The data for this project was downloaded from the NOAA National Centers for Environmental Information. Climate Data Online Search. The data consists of daily summaries of precipitation data measured from two different NOAA weather stations: one in Seattle, WA and one in Orlando, FL.
+- **Source:** 
+[Link to primary EdGap source](https://www.edgap.org/#5/37.875/-96.987)
+[Link to NCES source](https://nces.ed.gov/ccd/pubschuniv.asp)
+[Link to WA Open Data source](https://data.wa.gov/education/Report-Card-Assessment-Data-2016-17-School-Year/5tvk-w2c5/about_data)
+- **Description:** The data for this project comes from two sources. The primary data sourced is EdGap.org, and reports 2016 ACT and SAT scores and several socioeconomic characteristics of the school district. EdGap does not report that they have processed the data in any way, and it has been manually assembled from public release sources. The second data set is basic information about each school from the National Center for Education Statistics. The third data set is the State of Washington's Report Card Assessment for the 2016-2017 school year and contains student group information and data by student group on WA state test scores.
+
+The data preparation for this analysis is done in the Jupytr Notebook education_data_preparation.ipynb. 
 - **License:** N/A
 
 ---
 
 ## Analysis
-The entirety of the analysis is done in the Jupytr notebook Seattle_Weather.ipynb. The code in this notebook should be run in the order it is presented. The analysis consists of a progressive examination of the data through tables and graphs.
+The entirety of the analysis is done in the Jupytr notebook education_eda.ipynb. The code in this notebook should be run in the order it is presented. The analysis consists of a progressive examination of the data through tables and graphs.
 
 ---
 
 ## Results
-The results of the analysis shows that over the course of a year, Seattle typically experiences more days with precipitation, but Orlando experiences more total precipitation, measured in inches.
+The results of the analysis show...
 
 ---
 
